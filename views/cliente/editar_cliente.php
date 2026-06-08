@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <form method="POST">
 
-```
+
 <input type="text"
 name="nome"
 value="<?= $cliente['nome'] ?>">

@@ -30,10 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <form method="POST">
 
-```
+
 <button type="submit">
     Confirmar Exclusão
 </button>
-```
+
 
 </form>

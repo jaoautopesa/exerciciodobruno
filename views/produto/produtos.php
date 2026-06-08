@@ -36,7 +36,6 @@ $produtos = $dao->obterProdutos();
 
 <tr>
 
-```
 <td><?= $produto['id'] ?></td>
 
 <td>
@@ -81,7 +80,6 @@ $produtos = $dao->obterProdutos();
     </a>
 
 </td>
-```
 
 </tr>
 

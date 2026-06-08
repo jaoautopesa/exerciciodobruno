@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../../config/Conexao.php';
 require_once __DIR__ . '/../../models/ProdutoDAO.php';
 
-include __DIR__ . '/../cabecalho.php';
 
 $dao = new ProdutoDAO();
 
@@ -66,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     enctype="multipart/form-data"
 >
 
-```
+
 <input
     type="text"
     name="nome"
@@ -108,6 +107,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <button type="submit">
     Salvar
 </button>
-```
+
 
 </form>

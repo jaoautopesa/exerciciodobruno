@@ -7,7 +7,6 @@ ini_set('display_errors', 1);
 require_once __DIR__ . '/../../config/Conexao.php';
 require_once __DIR__ . '/../../models/ContatoDAO.php';
 
-include __DIR__ . '/../cabecalho.php';
 
 $dao = new ContatoDAO();
 
@@ -33,18 +32,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <p>
 
-```
+
 <?= $contato['nome'] ?>
-```
+
 
 </p>
 
 <form method="POST">
 
-```
 <button type="submit">
     Confirmar Exclusão
 </button>
-```
+
 
 </form>

@@ -7,7 +7,6 @@ ini_set('display_errors', 1);
 require_once __DIR__ . '/../../config/Conexao.php';
 require_once __DIR__ . '/../../models/ContatoDAO.php';
 
-include __DIR__ . '/../cabecalho.php';
 
 $erro = '';
 
@@ -45,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <form method="POST">
 
-```
+
 <input
     type="text"
     name="nome"
@@ -73,6 +72,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <button type="submit">
     Cadastrar
 </button>
-```
+
 
 </form>

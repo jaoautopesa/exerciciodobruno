@@ -35,7 +35,7 @@ $clientes = $dao->obterClientes();
 
 <tr>
 
-```
+
 <td><?= $cliente['id'] ?></td>
 <td><?= $cliente['nome'] ?></td>
 <td><?= $cliente['cpf'] ?></td>
@@ -56,7 +56,7 @@ $clientes = $dao->obterClientes();
     </a>
 
 </td>
-```
+
 
 </tr>
 
