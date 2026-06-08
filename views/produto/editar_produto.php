@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $imagem
     );
 
-    header('Location: produtos.php');
+    header('Location: index.php?pagina=produtos');
     exit;
 }
 ?>

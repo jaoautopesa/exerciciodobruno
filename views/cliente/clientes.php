@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../../config/Conexao.php';
 require_once __DIR__ . '/../../models/ClienteDAO.php';
 
-include __DIR__ . '/../cabecalho.php';
+
 
 $dao = new ClienteDAO();
 
@@ -13,9 +13,9 @@ $clientes = $dao->obterClientes();
 
 <h2>Lista de Clientes</h2>
 
-<a href="cadastro_cliente.php">
+<a href="index.php?pagina=cadastro_cliente">
     Novo Cliente
-</a>
+    </a>
 
 <br><br>
 
@@ -44,9 +44,6 @@ $clientes = $dao->obterClientes();
 <td><?= $cliente['endereco'] ?></td>
 
 <td>
-    <a href="index.php?pagina=cadastro_cliente">
-    Novo Cliente
-    </a>
 
     <a href="index.php?pagina=editar_cliente&id=<?= $cliente['id'] ?>">
     Editar
@@ -57,7 +54,7 @@ $clientes = $dao->obterClientes();
     <a href="index.php?pagina=excluir_cliente&id=<?= $cliente['id'] ?>">
     Excluir
     </a>
-    
+
 </td>
 ```
 

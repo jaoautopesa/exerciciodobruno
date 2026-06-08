@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../../config/Conexao.php';
 require_once __DIR__ . '/../../models/ProdutoDAO.php';
 
-include __DIR__ . '/../cabecalho.php';
+
 
 $dao = new ProdutoDAO();
 
@@ -13,8 +13,9 @@ $produtos = $dao->obterProdutos();
 
 <h2>Produtos</h2>
 
-<a href="cadastro_produto.php">
+<a href="index.php?pagina=cadastro_produto">
     Novo Produto
+</a>
 </a>
 
 <br><br>
@@ -67,9 +68,7 @@ $produtos = $dao->obterProdutos();
 <td><?= $produto['estoque'] ?></td>
 
 <td>
-    <a href="index.php?pagina=cadastro_produto">
-    Novo Produto
-    </a>
+    
 
     <a href="index.php?pagina=editar_produto&id=<?= $produto['id'] ?>">
     Editar

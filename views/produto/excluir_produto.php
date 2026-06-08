@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $dao->excluirProduto($id);
 
-    header('Location: produtos.php');
+   header('Location: index.php?pagina=produtos');
     exit;
 }
 ?>

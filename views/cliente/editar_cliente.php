@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['endereco']
     );
 
-    header('Location: clientes.php');
+    header('Location: index.php?pagina=clientes');
     exit;
 }
 ?>

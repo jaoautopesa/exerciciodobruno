@@ -24,8 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $dao->excluirContato($id);
 
-    header('Location: index.php');
-
+    header('Location: index.php?pagina=contatos');
     exit;
 }
 ?>

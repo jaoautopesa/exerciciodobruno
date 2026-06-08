@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $dao->excluirCliente($id);
 
-    header('Location: clientes.php');
+    header('Location: index.php?pagina=clientes');
     exit;
 }
 ?>

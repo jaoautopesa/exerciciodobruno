@@ -33,8 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $telefone
         );
 
-        header('Location: index.php');
-
+        header('Location: index.php?pagina=contatos');
         exit;
     }
 }
