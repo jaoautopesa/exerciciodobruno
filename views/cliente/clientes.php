@@ -13,7 +13,7 @@ $clientes = $dao->obterClientes();
 
 <h2>Lista de Clientes</h2>
 
-<a href="index.php?pagina=cadastro_cliente">
+<a href="index.php?pagina=cadastro_cliente" class="btn-novo">
     Novo Cliente
     </a>
 

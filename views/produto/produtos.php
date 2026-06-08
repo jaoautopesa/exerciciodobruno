@@ -11,12 +11,13 @@ $produtos = $dao->obterProdutos();
 
 ?>
 
-<h2>Produtos</h2>
+<h2>Lista de Produtos</h2>
 
-<a href="index.php?pagina=cadastro_produto">
+ <a href="index.php?pagina=cadastro_produto" class="btn-novo">
     Novo Produto
-</a>
-</a>
+    </a>
+
+
 
 <br><br>
 
@@ -67,7 +68,6 @@ $produtos = $dao->obterProdutos();
 <td><?= $produto['estoque'] ?></td>
 
 <td>
-    
 
     <a href="index.php?pagina=editar_produto&id=<?= $produto['id'] ?>">
     Editar

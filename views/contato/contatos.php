@@ -29,7 +29,7 @@ $totalPaginas = ceil(
 
 <h2>Lista de Contatos</h2>
 
-<a href="index.php?pagina=cadastro_contato">
+<a href="index.php?pagina=cadastro_contato" class="btn-novo">
     Novo Contato
 </a>
 
@@ -81,6 +81,7 @@ $totalPaginas = ceil(
     <td><?= $contato['telefone'] ?></td>
 
     <td>
+        
 
         <a href="index.php?pagina=editar_contato&id=<?= $contato['id'] ?>">
             Editar
